@@ -14,10 +14,10 @@
         <ul>
             <li><a href="javascript:void(0)" id="dashboard-link" class="active">Dashboard</a></li>
             <li><a href="wm-inventory-overview.html" id="inventory-link">Inventory Overview</a></li>
-            <li><a href="#">Receiving</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="wm-receiving.html" id="receiving-link">Receiving</a></li>
+            <li><a href="wm-shipping.html" id="shipping-link">Shipping</a></li>
+            <li><a href="wm-approvals.html" id="approvals-link">Approvals</a></li>
+            <li><a href="wm-reports.html" id="reports-link">Reports</a></li>
         </ul>
         <div class="logout-box">
             <a href="../html/login.html" class="logout-link">Logout</a>
@@ -66,15 +66,16 @@
                     <!-- JS will populate -->
                 </ul>
             </div>
+            <div class="dashboard-section">
+                <h2>Approval Requests</h2>
+                <ul class="approval-list" id="approval-list">
+                    <!-- JS will populate -->
+                </ul>
+            </div>
         </div>
         <div id="dynamic-content"></div>
     </div>
     <script src="../js/warehouse-manager.js"></script>
 </body>
 </html>
-        </div>
-        <div id="dynamic-content"></div>
-    </div>
-    <script src="../js/warehouse-manager.js"></script>
-</body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WM Approvals</title>
+    <link rel="stylesheet" href="../css/wm-approvals.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/WeBuild.png" alt="WeBuild Logo" class="sidebar-logo">
+            <span class="sidebar-title">Warehouse Manager</span>
+        </div>
+        <ul>
+            <li><a href="warehouse-manager.html">Dashboard</a></li>
+            <li><a href="wm-inventory-overview.html">Inventory Overview</a></li>
+            <li><a href="wm-receiving.html">Receiving</a></li>
+            <li><a href="wm-shipping.html">Shipping</a></li>
+            <li><a href="wm-approvals.html" class="active">Approvals</a></li>
+            <li><a href="wm-reports.html">Reports</a></li>
+        </ul>
+        <div class="logout-box">
+            <a href="login.html" class="logout-link">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-section" id="approvals-section">
+            <h2>Approval Requests</h2>
+            <div class="approvals-table-wrapper">
+                <table class="approvals-table">
+                    <thead>
+                        <tr>
+                            <th>Request ID</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Destination</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="approvals-table-body">
+                        <!-- JS will populate -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/wm-approvals.js"></script>
+</body>
+</html>
+</html>

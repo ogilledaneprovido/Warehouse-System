@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WM Reports</title>
+    <link rel="stylesheet" href="../css/wm-reports.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/WeBuild.png" alt="WeBuild Logo" class="sidebar-logo">
+            <span class="sidebar-title">Warehouse Manager</span>
+        </div>
+        <ul>
+            <li><a href="warehouse-manager.html">Dashboard</a></li>
+            <li><a href="wm-inventory-overview.html">Inventory Overview</a></li>
+            <li><a href="wm-receiving.html">Receiving</a></li>
+            <li><a href="wm-shipping.html">Shipping</a></li>
+            <li><a href="wm-approvals.html">Approvals</a></li>
+            <li><a href="wm-reports.html" class="active">Reports</a></li>
+        </ul>
+        <div class="logout-box">
+            <a href="login.html" class="logout-link">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-section" id="reports-section">
+            <h2>Reports</h2>
+            <form id="reportFilterForm" class="report-filter-form">
+                <label for="reportType">Report Type:</label>
+                <select id="reportType" name="reportType">
+                    <option value="inventory">Inventory Overview</option>
+                    <option value="lowstock">Low Stock Alerts</option>
+                    <option value="movement">Stock Movement Logs</option>
+                    <option value="approval">Approval Requests</option>
+                    <option value="summary">Warehouse Reports</option>
+                    <option value="batch">Batch/Lot Tracking</option>
+                </select>
+                <label for="fromDate">From:</label>
+                <input type="date" id="fromDate" name="fromDate">
+                <label for="toDate">To:</label>
+                <input type="date" id="toDate" name="toDate">
+                <button type="submit">Generate</button>
+            </form>
+            <div class="reports-table-wrapper">
+                <table class="reports-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reports-table-body">
+                        <!-- JS will populate -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/wm-reports.js"></script>
+</body>
+</html>
+</html>
