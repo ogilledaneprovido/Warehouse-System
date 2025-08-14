@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in to WITMS</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="../images/WeBuild.png" alt="WeBuild Warehouse Logo" class="logo-img">
+        <form id="loginForm">
+            <h2>Sign in to WITMS</h2>
+            <input type="text" id="username" placeholder="Username" autocomplete="username">
+            <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+            <select id="role">
+                <option value="">Select Role...</option>
+                <option value="warehouse_manager">Warehouse Manager</option>
+                <option value="warehouse_staff">Warehouse Staff</option>
+                <option value="inventory_auditor">Inventory Auditor</option>
+                <option value="procurement_officer">Procurement Officer</option>
+                <option value="accounts_payable_clerk">Accounts Payable Clerk</option>
+                <option value="accounts_receivable_clerk">Accounts Receivable Clerk</option>
+                <option value="it_administrator">IT Administrator</option>
+                <option value="top_management">Top Management</option>
+            </select>
+            <button type="submit">Login</button>
+            <div class="error-message" id="errorMsg"></div>
+        </form>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

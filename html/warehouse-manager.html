@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warehouse Manager Dashboard</title>
+    <link rel="stylesheet" href="../css/warehouse-manager.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="../images/WeBuild.png" alt="WeBuild Logo" class="sidebar-logo">
+            <span class="sidebar-title">Warehouse Manager</span>
+        </div>
+        <ul>
+            <li><a href="javascript:void(0)" id="dashboard-link" class="active">Dashboard</a></li>
+            <li><a href="wm-inventory-overview.html" id="inventory-link">Inventory Overview</a></li>
+            <li><a href="#">Receiving</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        <div class="logout-box">
+            <a href="../html/login.html" class="logout-link">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="dashboard-section">
+            <h1>Welcome, Warehouse Manager!</h1>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <div class="card-title">Total Inventory Items</div>
+                    <div class="card-value" id="stat-inventory">--</div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-title">Low Stock Alerts</div>
+                    <div class="card-value" id="stat-lowstock">--</div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-title">Pending Shipments</div>
+                    <div class="card-value" id="stat-shipments">--</div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-title">Pending Receivings</div>
+                    <div class="card-value" id="stat-receivings">--</div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-title">Active Users/Staff</div>
+                    <div class="card-value" id="stat-users">--</div>
+                </div>
+            </div>
+            <div class="dashboard-section">
+                <h2>Inventory & Shipment Trends</h2>
+                <div class="dashboard-chart-placeholder">
+                    <span>Charts/Graphs (Inventory trends, Shipment volume over time) - Coming Soon</span>
+                </div>
+            </div>
+            <div class="dashboard-section">
+                <h2>Recent Activity</h2>
+                <ul class="activity-list" id="activity-list">
+                    <!-- JS will populate -->
+                </ul>
+            </div>
+            <div class="dashboard-section">
+                <h2>Notifications & Alerts</h2>
+                <ul class="notification-list" id="notification-list">
+                    <!-- JS will populate -->
+                </ul>
+            </div>
+        </div>
+        <div id="dynamic-content"></div>
+    </div>
+    <script src="../js/warehouse-manager.js"></script>
+</body>
+</html>
+        </div>
+        <div id="dynamic-content"></div>
+    </div>
+    <script src="../js/warehouse-manager.js"></script>
+</body>
+</html>
